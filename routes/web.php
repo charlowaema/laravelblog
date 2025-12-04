@@ -23,6 +23,6 @@ Route::get('/', function () {
 
 
 
-Route::get('/blog', [PostsController::class, 'index']);
-Route::get('/blog/create', [PostsController::class, 'create']);
-Route::post('/blog', [PostsController::class, 'store']);
+Route::get('/', [PostsController::class, 'index']);
+Route::get('/create', [PostsController::class, 'create']);
+Route::post('/', [PostsController::class, 'store']);

@@ -7,7 +7,7 @@
 
 <h1>Create New Post</h1>
 
-<form action="/blog" method="POST">
+<form action="/" method="POST">
     @csrf
     <label>Title:</label><br>
     <input type="text" name="title" required><br><br>
@@ -18,7 +18,7 @@
     <button type="submit">Save Post</button>
 </form>
 
-<a href="/blog">Back to Blog</a>
+<a href="/">Back to Blog</a>
 
 </body>
 </html>

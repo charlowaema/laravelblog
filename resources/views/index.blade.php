@@ -7,7 +7,7 @@
 
 <h1>Blog Posts</h1>
 
-<a href="/blog/create">Create New Post</a>
+<a href="/create">Create New Post</a>
 
 @if(session('success'))
     <p style="color:green;">{{ session('success') }}</p>

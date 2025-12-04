@@ -11,13 +11,13 @@ class PostsController extends Controller
     public function index()
     {
         $posts = Post::all(); // fetch from database
-        return view('blog.index', compact('posts'));
+        return view('index', compact('posts'));
     }
 
     // Show form to create new post
     public function create()
     {
-        return view('blog.create');
+        return view('create');
     }
 
     // Save new post to database
@@ -36,6 +36,6 @@ class PostsController extends Controller
         ]);
 
         // Redirect to blog index
-        return redirect('/blog')->with('success', 'Post created successfully!');
+        return redirect('/')->with('success', 'Post created successfully!');
     }
 }
